@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/operating_start_time_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/operating_start_time_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/start_time"
+            android:inputType="time"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/operating_end_time_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/operating_start_time_layout"
+        app:layout_constraintStart_toStartOf="@+id/operating_start_time_layout"
+        app:layout_constraintTop_toBottomOf="@+id/operating_start_time_layout">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/operating_end_time_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/end_time"
+            android:inputType="time"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/operating_end_time_layout"
+        app:layout_constraintStart_toStartOf="@+id/operating_end_time_layout"
+        app:layout_constraintTop_toBottomOf="@+id/operating_end_time_layout">
+
+        <AutoCompleteTextView
+            android:id="@+id/operating_activity_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:completionHint="@string/activity_text"
+            android:hint="@string/activity_text"
+            android:textAlignment="textStart"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="123dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</android.support.constraint.ConstraintLayout>

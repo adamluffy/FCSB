@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">FCSB</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="forget_password_text">Forget Password?</string>
+    <string name="login_text">Login</string>
+    <string name="or_text">OR</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="username_text">Username</string>
+    <string name="next_text">Next</string>
+    <string name="title_activity_phone">PhoneActivity</string>
+    <string name="verify_phone_text">In order to protect the security of your account, please add your phone number. We will send you a text message with a verification code that you will enter in the next screen.</string>
+    <string name="My_phone">+60</string>
+    <string name="hp_number">Phone Number</string>
+    <string name="title_activity_verification">VerificationActivity</string>
+    <string name="digit_verification">Enter a 6 digit passcode which you\'ll be asked for when you register your phone number with FCSB:</string>
+    <string name="message_error">Didn\'t receive a message?</string>
+    <string name="resend">RESEND CODE</string>
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="ForgotPasswordText">In order to receive your access code by email, please enter the address you provided during the registration process.</string>
+    <string name="Send_text">Send</string>
+    <string name="Forgot_Title">Forgot Your Password</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_operating_hour">OperatingHourActivity</string>
+    <string name="header_text">Header</string>
+    <string name="date_text">Date</string>
+    <string name="site_text">Site</string>
+    <string name="machine_text">Machine</string>
+    <string name="google_sign_in">SIGN IN WITH GOOGLE</string>
+    <string name="sign_up">sign up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vehicle_text">Vehicle</string>
+    <string name="meter_hour_text">Meter Hour</string>
+    <string name="start_meter">Start Meter</string>
+    <string name="end_meter">End Meter</string>
+    <string name="log_text">Log</string>
+    <string name="add_log_text">ADD LOG</string>
+    <string name="save_text">SAVE</string>
+    <string name="from_text">From</string>
+    <string name="to_text">To</string>
+    <string name="activity_text">Activity</string>
+    <string name="semicolon">:</string>
+    <string name="time_text">Time</string>
+    <string name="millage_text">Millage</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="plate_number">Plate No</string>
+    <string name="no_data_text">No Data</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="location">Location</string>
+
+    <string-array name="location">
+        <item>SI - Ulu Silat</item>
+        <item>MW - Mulok West</item>
+        <item>MRI - Miri</item>
+        <item>MCE - Mukah Coal Energy</item>
+        <item>MU - Mukah</item>
+        <item>SBW - Sibu</item>
+        <item>BTU - Bintulu</item>
+        <item>KCH - Kuching</item>
+        <item>SLG - Selangau</item>
+        <item>SCR - SCR Stockyard</item>
+    </string-array>
+
+    <string-array name="activity">
+        <item>OB - Overburden</item>
+        <item>CL - Coal Loading</item>
+        <item>CM - Coal Mining</item>
+        <item>R - Road</item>
+        <item>DR- Drilling</item>
+        <item>O - Outside</item>
+        <item>SC - Site Cleaning</item>
+        <item>P - Parking</item>
+        <item>BD - Breakdown</item>
+    </string-array>
+</resources>

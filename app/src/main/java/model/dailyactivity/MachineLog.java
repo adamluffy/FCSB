@@ -2,6 +2,8 @@ package model.dailyactivity;
 
 import java.util.Date;
 
+import utility.DateTimeUtility;
+
 public class MachineLog implements Log {
 
     protected Date start;
@@ -16,7 +18,7 @@ public class MachineLog implements Log {
         this.start = start;
         this.end = end;
         this.activity = activity;
-
+        this.hour = DateTimeUtility.timeDiff(start,end);
     }
 
     public Date getStart() {
@@ -35,6 +37,9 @@ public class MachineLog implements Log {
         this.end = end;
     }
 
+    public double getHour() {
+        return hour;
+    }
 
     @Override
     public void setActivity(String activity) {
