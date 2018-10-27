@@ -13,13 +13,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.squareup.picasso.Picasso;
 
-import de.hdodenhof.circleimageview.CircleImageView;
+import fcsb.franky.com.my.fcsb.databinding.NavHeaderHomeBinding;
 import utility.FragmentUtility;
 
 
@@ -28,9 +26,6 @@ public class HomeActivity extends AppCompatActivity
 
     FirebaseAuth auth;
     FirebaseUser user;
-
-    CircleImageView profilePic;
-    TextView displayName, emailText;
 
     View header;
 
@@ -55,8 +50,10 @@ public class HomeActivity extends AppCompatActivity
         header = navigationView.getHeaderView(0);
         navigationView.setNavigationItemSelectedListener(this);
 
+        NavHeaderHomeBinding navHeaderHomeBinding = NavHeaderHomeBinding.bind(header);
+
         if(user!=null){
-            setUserProfile(user);
+            navHeaderHomeBinding.setUser(user);
         }
 
 
@@ -133,21 +130,6 @@ public class HomeActivity extends AppCompatActivity
         return true;
     }
 
-
-    private void setUserProfile(FirebaseUser user){
-
-        profilePic = header.findViewById(R.id.icon_image);
-        Picasso.get()
-                .load(user.getPhotoUrl())
-                .placeholder(R.drawable.ic_account_circle_black_156dp)
-                .into(profilePic);
-
-        displayName = header.findViewById(R.id.display_name);
-        displayName.setText(user.getDisplayName());
-
-        emailText = header.findViewById(R.id.email_text);
-        emailText.setText(user.getEmail());
-    }
 
 
 }

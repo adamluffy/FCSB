@@ -54,6 +54,7 @@ public class OperatingHourFragment extends Fragment implements DatePickerDialog.
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_operating_hour, container, false);
+
         homeActivity = ((HomeActivity)container.getContext());
 
         dateLayout = view.findViewById(R.id.operating_hour_date_layout);

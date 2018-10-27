@@ -33,8 +33,7 @@
         app:layout_constraintBottom_toTopOf="@+id/add_log_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        tools:listitem="@layout/machine_log_item">
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
 
     </android.support.v7.widget.RecyclerView>
 
